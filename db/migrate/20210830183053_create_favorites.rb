@@ -4,6 +4,8 @@ class CreateFavorites < ActiveRecord::Migration[6.1]
       t.string :title
       t.string :movie_overview
       t.string :poster_url
+      t.integer :user_id
+      t.integer :movie_id
 
       t.timestamps
     end
