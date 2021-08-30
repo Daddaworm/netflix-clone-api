@@ -1,3 +1,7 @@
 class FavoriteSerializer < ActiveModel::Serializer
-  attributes :id
+  attributes :id, :movie
+
+  belongs_to :user
+  belongs_to :movie
+  
 end
